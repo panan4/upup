@@ -1,0 +1,35 @@
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+* {box-sizing: border-box;}
+html,body,h1,h2,h3,h4,h5,h6,/* 제목태그 */
+p,ul,ol,li,blockquote,dl,dd,dt,address,video,/* 블록태그 */
+q, strong,em,del,sup,sub,s,code,img,a,/* 인라인태그 */
+table, tr, th, td, thead, tbody, tfoot,/* 테이블태그 */
+form,fieldset,legend,input,button,label,textarea,select,option,/* 폼태그 */
+header,main,section,article,footer,aside,nav,figure,figcaption,/* 시멘틱태그 */
+div,span/* 그룹태그 */
+{
+    font-family: 'Noto Sans KR',"Font Awesome 5 Free","Font Awesome 5 Brands", sans-serif;
+    /* font-family: 'Nanum Gothic', sans-serif; */
+    margin: 0; padding: 0;
+    font-size: 1.0rem;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.0rem;
+    list-style: none;
+    letter-spacing: -0.02rem;
+}
+a {text-decoration: none; color: black;}
+table,tr,th,td {border-collapse:collapse;}
+button {cursor: pointer; border: none; background:none;}
+.skip {display:none;}
+fieldset {border: 0;}
+legend {display: none;;}
+.lefticon::after, .lefticon::before 
+{font-weight: 600; display: inline; content: '\f053';}
+.homeicon::before 
+{font-weight: 600; display: inline; content: '\f015';}
+/* 
+.sikp class=skip
+ class=righticon 대상은 앞뒤 화살표
+*/

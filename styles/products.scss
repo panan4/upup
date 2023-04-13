@@ -1,0 +1,91 @@
+//공통변수
+$fon28:1.75rem;
+$fon26:1.625rem;
+$fon22:1.375rem;
+$fon18:1.125rem;
+$fon14:1.875rem;
+$color1:#00a0e2;
+$color2:#ff3000;
+$color3:#222;
+$color4:#fff;
+$fWeight:700;
+//전체폭은 calc 1200px 좌측 메인사진은 500px, 작은이미지는 150px
+
+//main
+body{width:1200px; margin: 0 auto;}
+.path{
+    display: flex; flex-flow: row nowrap; padding: 20px 0; background-color: bisque;
+    p{color: #196fba;
+        a{color: #196fba;}
+        img{transform: translate(0%,-10%);}
+    }
+}
+main{background-color: aqua;
+    display: flex; justify-content: space-between;
+    .container{width: 500px;
+        .big{
+            img{width: 100%;}
+        }
+        .thum{width: 100%; display: flex; justify-content: space-between; margin-top: 30px;
+            a{width: 150px; height: 150px;
+                img{height: 100%;}
+            }
+        }
+    }
+    .contents{width:calc(100% - 550px); background-color: greenyellow;
+        
+        dl{font-size: $fon18;
+            dt{
+                margin: 10px 0; font-size: $fon28; font-weight: $fWeight;
+                del{font-size:$fon28; line-height: 2;}
+            }
+            dt:nth-of-type(1) {
+                border-bottom: 1px solid #000; padding-bottom: 30px;
+            }
+            dd{
+                span {font-size: $fon18; font-weight: $fWeight; margin-right: 30px;
+                    line-height: 3;
+                }
+                #brand{width: 100%; height: 45px; margin: 10px 0;
+                    option{}
+                }
+            }
+            .phone{/* position: relative; */
+                #galaxy{width: 100%; height: 45px; margin: 10px 0;
+                    
+                    option{}
+                }
+                #iphone{width: 100%; height: 45px; margin: 10px 0;
+                    /* position: absolute; left: 0; */
+                    option{}
+            }
+            }
+        }
+        .order{display: flex; align-items: center; margin: 15px 0; justify-content: space-between;
+            border-top: 1px solid #000;border-bottom: 1px solid #000;
+            padding: 20px 0;
+            > p {font-size: $fon18;}
+            .order_r{display: flex; justify-content: space-between;
+                align-items: center;  text-align: right;
+                width:35%;
+                form{
+                    fieldset{
+                        input{border: none; width: 50px;}
+                    }
+                }
+                #cancel{width: 50px;margin-left: 25px;}
+                > h2{width: 150px;}
+            }
+        }
+        > h2{margin: 80px 0 25px 0;}
+        .order_btm{display: flex; justify-content: space-between;
+            margin-top: 30px;
+            > button{
+                width: 32%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

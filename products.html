@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLOR JELLY CASE | 어프어프</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/products.css">
+</head>
+<body>
+    <div class="path">
+        <p><a href="#">HOME</a></p>
+        <p><img src="./image/navigate_next.png" alt=""></p>
+        <p><a href="#">CASE</a></p>
+        <p><img src="./image/navigate_next.png" alt=""></p>
+        <p><a href="#">JELLY CASE</a></p>
+        <p><img src="./image/navigate_next.png" alt=""></p>
+        <p>COLOR JELLY CASE</p>
+    </div>
+    <main>
+        <div class="container">
+            <div class="big"><img src="./image/product_01.jpg" alt=""></div>
+            <div class="thum">
+                <a href="#"><img src="./image/product_01.jpg" alt=""></a>
+                <a href="#"><img src="./image/product_02.jpg" alt=""></a>
+                <a href="#"><img src="./image/product_03.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="contents">
+            <!--<h1>CHECKER BOARD CHERRY COVY(젤리)</h1>
+            <p><del>17,000WON</del></p>
+            <h1>8,900WON</h1>
+            <p><span>배송비</span>2,500원 (50,000원 이상 구매시 무료 배송)</p> -->
+            <dl>
+                <dt>CHECKER BOARD CHERRY COVY(젤리)<br><del>17,000WON</del><br>8,900<em>WON</em></dt>
+                <dd><span>배송비</span>2,500원 (50,000원 이상 구매시 무료 배송)</dd>
+                <dt>브랜드</dt>
+                <dd>
+                    <select name="brand" id="brand">
+                        <option value="none">- [필수] 옵션을 선택해주세요 -</option>
+                        <option value="galaxy">Galaxy</option>
+                        <option value="iphone">iPhone</option>
+                    </select>
+                </dd>
+                <dt>기종</dt>
+                <dd class="phone">
+                    <select name="galaxy" id="galaxy">
+                        <option value="옵션">- [필수] 옵션을 선택해주세요 -</option>
+                        <option value="Galaxy S20">Galaxy S20</option>
+                        <option value="Galaxy S21">Galaxy S21</option>
+                        <option value="Galaxy S22">Galaxy S22</option>
+                        <option value="Galaxy Note S20">Galaxy Note S20</option>
+                        <option value="Galaxy Note S21">Galaxy Note S21</option>
+                        <option value="Galaxy Note S22">Galaxy Note S22</option>
+                    </select>
+                    <select name="iphone" id="iphone">
+                        <option value="옵션">- [필수] 옵션을 선택해주세요 -</option>
+                        <option value="iPhone 12">iPhone 12</option>
+                        <option value="iPhone 12 PRO">iPhone 12 Pro</option>
+                        <option value="iPhone 13">iPhone 13</option>
+                        <option value="iPhone 13 PRO">iPhone 13 Pro</option>
+                        <option value="iPhone 14">iPhone 14</option>
+                        <option value="iPhone 14 PRO">iPhone 14 Pro</option>
+                    </select>
+                </dd>
+            </dl>
+            <div class="order">
+                <div class="order_l">
+                    <p>CHECKER BOARD CHERRY COVY(젤리)</p>
+                    <p id="result">기종을 선택해주세요.</p>
+                </div>
+                <div class="order_r">
+                    <form method="get" action="">
+                        <fieldset>
+                            <legend class="skip">숫자입력양식</legend>
+                            <input type="number" name="number">
+                        </fieldset>
+                    </form>
+                    <button type="button" id="cancel"><img src="./image/product_cancel.png" alt="전체취소"></button>
+                    <h2><span>17,000</span> WON</h2>
+                </div>
+            </div>
+            <h2>TOTAL PRICE :</h2>
+            <div class="order_btm">
+                <button type="button"><img src="./image/product_btn01.png" alt=""></button>
+                <button type="button"><img src="./image/product_btn02.png" alt=""></button>
+                <button type="button"><img src="./image/product_btn03.png" alt=""></button>
+            </div>
+        </div>
+    </main>
+    <script src="./script/script.js"></script>
+</body>
+</html>
